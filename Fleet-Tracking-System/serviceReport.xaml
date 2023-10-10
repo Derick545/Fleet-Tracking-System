@@ -1,0 +1,33 @@
+﻿<Window x:Class="Fleet_Tracking_System.serviceReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fleet_Tracking_System"
+        mc:Ignorable="d"
+        Title="Service Report" Height="600" Width="1100"
+        Background="#FF071021" WindowStartupLocation="CenterScreen" >
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Service Report" HorizontalAlignment="Center" Margin="0,28,0,0" VerticalAlignment="Top" Foreground="#FFFBFBFB" FontSize="22"/>
+        <Label Content="Vehicle Number" HorizontalAlignment="Left" Margin="45,107,0,0" VerticalAlignment="Top" Foreground="#FFFBFAFA" FontSize="14"/>
+        <TextBox x:Name="vehicleNumberTxt" HorizontalAlignment="Left" Margin="175,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="25" Background="#FFF70606" Foreground="#FFF5E9E9"/>
+        <Label Content="Service Informtion" HorizontalAlignment="Left" Margin="45,167,0,0" VerticalAlignment="Top" Foreground="#FFFBFAFA" FontSize="14"/>
+        <RichTextBox x:Name="serviceInformationTxt" Margin="175,167,213,320" Background="#FFFF0606" Foreground="#FFFFF6F6">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <DataGrid x:Name="reportData" Margin="45,358,40,44" Background="#FF252542" AutoGenerateColumns="False" FontWeight="Bold">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="40" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Vehicle Number" Width="100" Binding="{Binding VehicleNumber}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Service Information" Width="400" Binding="{Binding ServiceInformation}"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="createBtn" Content="CREATE" HorizontalAlignment="Center" Margin="0,295,0,0" VerticalAlignment="Top" Width="124" Height="31" Foreground="#FFF9F9F9" Background="#FFC12D2D" Click="createBtn_Click" />
+        <Button x:Name="backBtn" Content="BACK" HorizontalAlignment="Left" Margin="786,36,0,0" VerticalAlignment="Top" Width="66" Height="31" Foreground="#FFF9F9F9" Background="#FFC12D2D" Click="backBtn_Click" />
+    </Grid>
+</Window>

@@ -1,0 +1,70 @@
+﻿<Window x:Class="Fleet_Tracking_System.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fleet_Tracking_System"
+        mc:Ignorable="d"
+        Title="Dashboard" Height="600" Width="1100" Background="#FF071021" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen" >
+    <Grid>
+
+
+
+        <Grid HorizontalAlignment="Left" Width="767" RenderTransformOrigin="0.562,0.502" Margin="249,103,0,-19">
+
+
+
+            <Button x:Name="vehicleRecordsBtn" Height="151" Margin="401,32,43,0"  VerticalAlignment="Top" Background="#FF25253E" Click="vehicleRecordsBtn_Click" />
+            <Button x:Name="usersBtn1" Height="150" Margin="401,242,43,0"  VerticalAlignment="Top" Background="#FF25253E" Click="usersBtn1_Click_1"/>
+            <Label Content="Vehicle Records" HorizontalAlignment="Left" Margin="401,28,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" Width="175" FontWeight="Bold"/>
+            <Label x:Name="vehiclesLbl" Content="8" HorizontalAlignment="Left" Margin="526,87,0,0" VerticalAlignment="Top" Foreground="#FFF5F3F3" FontFamily="Bahnschrift Condensed" FontSize="36"/>
+            <Image Margin="634,76,56,0"  Source="Images/truck-2-256.png" Height="84" VerticalAlignment="Top"  />
+            <Button x:Name="repairsBtn" HorizontalAlignment="Left" Height="151" Margin="34,32,0,0"  VerticalAlignment="Top" Width="324" Background="#FF25253E" Click="repairsBtn_Click" />
+            <Label Content="Repairs Total Amount" HorizontalAlignment="Left" Height="29" Margin="34,32,0,0" VerticalAlignment="Top" Width="196" FontFamily="Arial Rounded MT Bold" FontSize="16" Foreground="#FFDAFFF5"/>
+            <Image HorizontalAlignment="Left" Height="57" Margin="244,87,0,0" VerticalAlignment="Top" Width="62" Source="/settings-8-48.png" />
+            <Label Content="R" HorizontalAlignment="Left" Margin="54,103,0,0" VerticalAlignment="Top" Foreground="#FFF5F3F3" FontFamily="Bahnschrift Condensed" FontSize="48" />
+            <Label x:Name="amountLbl" Content="10000" HorizontalAlignment="Left" Margin="78,117,0,0" VerticalAlignment="Top" Foreground="#FFF5F3F3" FontFamily="Bahnschrift Condensed" FontSize="36"/>
+            <Label x:Name="userNumberLbl" Content="8" HorizontalAlignment="Left" Margin="526,298,0,0" VerticalAlignment="Top" Foreground="#FFF5F3F3" FontFamily="Bahnschrift Condensed" FontSize="36"/>
+            <Button x:Name="serviceReportBtn" HorizontalAlignment="Right" Height="151" Margin="0,241,410,0"  VerticalAlignment="Top" Width="324" Background="#FF25253E" Click="serviceReportBtn_Click"/>
+            <Label Content="Service Reports" HorizontalAlignment="Left" Margin="30,241,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" Width="242"/>
+            <Label x:Name="serviceReportLbl" Content="8" HorizontalAlignment="Left" Margin="117,316,0,0" VerticalAlignment="Top" Foreground="#FFF5F3F3" FontFamily="Bahnschrift Condensed" FontSize="36"/>
+            <Image HorizontalAlignment="Left" Height="57" Margin="244,307,0,0" VerticalAlignment="Top" Width="62" Source="/report-3-64.png"/>
+
+            <Label x:Name="userLbl1" Content="Users" HorizontalAlignment="Left" Margin="401,241,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" Width="114" FontWeight="Bold" Height="38"/>
+            <Image x:Name="userImg" HorizontalAlignment="Left" Height="71" Margin="639,291,0,0" VerticalAlignment="Top" Width="68" Source="/conference-48.png"/>
+
+        </Grid>
+        <Grid Margin="246,19,0,401"  HorizontalAlignment="Left" Width="772">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="46*"/>
+                <RowDefinition Height="119*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Dashboard" HorizontalAlignment="Left" Height="46" Margin="34,34,0,0" VerticalAlignment="Top" Width="207" FontFamily="Arial Rounded MT Bold" FontSize="36" Foreground="#FFDAFFF5" Grid.RowSpan="2"/>
+            <Label x:Name="dashNameLbl" Content="Admin" HorizontalAlignment="Left" Height="47" Margin="34,7,0,0" VerticalAlignment="Top" Width="207" FontFamily="Arial Rounded MT Bold" FontSize="27" Foreground="#FFA6C5BD" Grid.RowSpan="2"/>
+            <Label x:Name="userLbl" Content="Username kadjksjdska" HorizontalAlignment="Left" Height="31" Margin="534,13,0,0" VerticalAlignment="Top" Width="194" Foreground="#FFFDF9F9" FontFamily="Bahnschrift Condensed" FontSize="22"/>
+            <Label x:Name="roleLbl" Content="Role" HorizontalAlignment="Left" Height="26" Margin="534,44,0,0" VerticalAlignment="Top" Width="83" Foreground="White" FontFamily="Bahnschrift Condensed" FontSize="16" Grid.RowSpan="2"/>
+        </Grid>
+        <Rectangle HorizontalAlignment="Left" Height="584" Stroke="Black" VerticalAlignment="Center" Width="176" Fill="#FFDA2A2A"/>
+        <Image HorizontalAlignment="Left" Height="80" Margin="52,10,0,0" VerticalAlignment="Top" Width="70" Source="/icons8-truck-weight-max-loading-50.png"/>
+        <Image HorizontalAlignment="Left" Height="71" Margin="52,152,0,0" VerticalAlignment="Top" Width="70" Source="/icons8-today-26.png" RenderTransformOrigin="0.507,0.556"/>
+        <Image x:Name="clockImg" HorizontalAlignment="Left" Height="68" Margin="50,275,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.5,0.5" Source="/icons8-clock-50.png">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.567"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="tripInfoBtn" HorizontalAlignment="Left" Margin="35,45,0,0" VerticalAlignment="Top" Height="77" Width="106" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF725252" Click="tripInfoBtn_Click" FontSize="14">
+            <Label Content="Trip Info" HorizontalAlignment="Center" VerticalAlignment="Top" Width="90" Foreground="#FFF7F6F6" FontSize="20" Height="38" RenderTransformOrigin="0.541,0.791"/>
+        </Button>
+        <Button x:Name="appointmentBtn" HorizontalAlignment="Left" Margin="26,187,0,0" VerticalAlignment="Top" Height="96" Width="122" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF725252" Click="appointmentBtn_Click">
+            <Label Content="Appointments" HorizontalAlignment="Center" VerticalAlignment="Top" Width="122" Foreground="#FFF7F6F6" FontSize="18"/>
+        </Button>
+        <Button x:Name="timesheetBtn" HorizontalAlignment="Left" Margin="42,307,0,0" VerticalAlignment="Top" Height="78" Width="90" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF725252" Click="timesheetBtn_Click">
+            <Label x:Name="timeLbl" Content="Timesheet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="96" Foreground="#FFF7F6F6" FontSize="18"/>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Fleet_Tracking_System</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="add-user-64.png" />
+    <None Remove="conference-48.png" />
+    <None Remove="icons8-clock-50.png" />
+    <None Remove="icons8-lock-24.png" />
+    <None Remove="icons8-today-26.png" />
+    <None Remove="icons8-truck-weight-max-loading-50.png" />
+    <None Remove="icons8-user-24.png" />
+    <None Remove="Images\truck-2-256.png" />
+    <None Remove="report-3-64.png" />
+    <None Remove="settings-8-48.png" />
+    <None Remove="truck-2-256.png" />
+    <None Remove="user-64.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="add-user-64.png" />
+    <Resource Include="conference-48.png" />
+    <Resource Include="icons8-clock-50.png" />
+    <Resource Include="icons8-lock-24.png" />
+    <Resource Include="icons8-today-26.png" />
+    <Resource Include="icons8-truck-weight-max-loading-50.png" />
+    <Resource Include="icons8-user-24.png" />
+    <Resource Include="Images\truck-2-256.png" />
+    <Resource Include="report-3-64.png" />
+    <Resource Include="settings-8-48.png" />
+    <Resource Include="truck-2-256.png" />
+    <Resource Include="user-64.png" />
+  </ItemGroup>
+
+</Project>

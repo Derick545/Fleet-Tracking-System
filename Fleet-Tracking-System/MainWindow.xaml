@@ -1,0 +1,26 @@
+﻿<Window x:Class="Fleet_Tracking_System.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fleet_Tracking_System"
+        mc:Ignorable="d"
+         Title="Login" Height="600" Width="1100" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FF071021" >
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="384" Height="381" >
+
+
+        <TextBox x:Name="usernameTxt"  Padding="22,5,5,5"   BorderThickness="0" HorizontalAlignment="Center" BorderBrush="{x:Null}" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" Background="#FFF70606" Foreground="White" FontFamily="Arial" Height="29" Margin="0,214,0,0" FontSize="14"/>
+        <Label Content="Cargo Tracking System" HorizontalAlignment="Center" Margin="0,119,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Bernard MT Condensed" FontSize="18"/>
+
+        <Label Content="Login" HorizontalAlignment="Center" Height="31" VerticalAlignment="Top" Width="50" Foreground="#FFFFFBFB" FontFamily="Arial Narrow" FontStyle="Italic" FontSize="18" Margin="0,155,0,0"/>
+        <Button x:Name="loginBtn" Content="LOGIN" HorizontalAlignment="Center" Height="28" Margin="0,329,0,0" VerticalAlignment="Top" Width="96" Background="#FFC12D2D" Foreground="#FFF7F3F3" BorderBrush="#FFA63E3E" Click="loginBtn_Click"/>
+        <Label Content="Username" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="70" Foreground="#FFFFFBFB" FontFamily="Arial Narrow" FontStyle="Italic" Margin="26,188,0,0" FontSize="16"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="74" Foreground="#FFFFFBFB" FontFamily="Arial Narrow" FontStyle="Italic" Margin="26,249,0,0" FontSize="16"/>
+        <PasswordBox x:Name="PasswordTxt" HorizontalAlignment="Center" Padding="22,5,5,5" Margin="0,274,0,0" VerticalAlignment="Top" Width="332" Height="32"  Background="#FFF70606"  Foreground="White" BorderBrush="{x:Null}" FontSize="14"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="140,10,0,0" VerticalAlignment="Top" Width="100" Source="/truck-2-256.png"/>
+        <Image HorizontalAlignment="Left" Height="27" Margin="26,215,0,0" VerticalAlignment="Top" Width="25" Source="/icons8-user-24.png"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="26,277,0,0" VerticalAlignment="Top" Width="25" Source="/icons8-lock-24.png"/>
+        <Button x:Name="exitBtn" Content="EXIT" HorizontalAlignment="Left" Height="28" Margin="319,-9,0,0" VerticalAlignment="Top" Width="39" Background="#FFC12D2D" Foreground="#FFF7F3F3" BorderBrush="#FFA63E3E" Click="exitBtn_Click"/>
+
+    </Grid>
+</Window>
